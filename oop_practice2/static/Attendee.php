@@ -10,9 +10,12 @@
         public static function getCount(){
             return self::$count;
         }
+
+        
     }
 
-    // $mohan = new Attendee();
+    $mohan = new Attendee();
+    $rakib = new Attendee();
     print_r(Attendee::getCount());
 
 ?>
