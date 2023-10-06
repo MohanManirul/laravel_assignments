@@ -12,11 +12,11 @@ class Reservation{
     }
 
     private function sendCancelNotification(){
-        echo "Send Cancel Notification" .$this->host;
+        echo "Send Cancel Notification " .$this->host ."<br/>";
     }
 
     private function refundGuest(){
-        echo "Refund Guest" . $this->guest;
+        echo "Refund Guest " . $this->guest;
     }
 }
 
