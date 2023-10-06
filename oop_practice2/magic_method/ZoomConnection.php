@@ -23,6 +23,11 @@ class ZoomConnection{
         self::$count-- ;
     }
 
+    public function __toString()
+    {
+        return "Connection ID : " . $this->connectionID;
+    }
+
     public function getCount(){
         return self::$count;
     }
