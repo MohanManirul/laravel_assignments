@@ -1,5 +1,5 @@
 <?php
-
+// abstract class start
 abstract class Vehicle{
     abstract public function getBaseFare();
     abstract public function getPerKiloFare();
@@ -10,6 +10,9 @@ abstract class Vehicle{
     
 }
 
+// abstract class ends
+
+// interface class start
 interface HourlyRentable{
     public function getHourlyRate($hours);
 }
@@ -17,6 +20,7 @@ interface HourlyRentable{
 interface DailyRentable{
     public function getDailyRate($days);
 }
+// interface class ends
 
 class Car extends Vehicle implements HourlyRentable , DailyRentable
 {
